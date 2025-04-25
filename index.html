@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Student Profile</title>
+    <style>
+        /* CSS Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .profile-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .profile-header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .student-name {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .student-major {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .university {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Main Content */
+        .profile-content {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #6e8efb;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #555;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #eef2ff;
+            color: #6e8efb;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Projects Section */
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Footer */
+        .profile-footer {
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #eef2ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6e8efb;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-icon:hover {
+            background: #6e8efb;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .profile-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Header Section -->
+        <div class="profile-header">
+            <img src="aca61851-cd92-4a39-b9b3-4fe7c2751950.jpg" alt="Student Photo" class="profile-pic">
+            <h1 class="student-name">Pranshoo</h1>
+            <p class="student-major">Computer Science (IOT)</p>
+            <span class="university">Lamrin Tech Skills University</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="profile-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="section">
+                    <h2 class="section-title">About Me</h2>
+                    <p>Passionate computer science student with expertise in web development and machine learning. Currently working on AI research projects while maintaining a 3.9 GPA.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="info-item">
+                        <div class="info-label">Lamrin Tech Skills University</div>
+                        <div>B.Tech in Computer Science (2023-2027)</div>
+                        <div>GPA: 5.92/6.0</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Contact</h2>
+                    <div class="info-item">
+                        <div class="info-label">Email</div>
+                        <div>palpranshu47@gmail.com</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Phone</div>
+                        <div>(7458928678)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Address</div>
+                        <div>Lamrin Tech Skills University Punjab, Ropar
+                            40 min drive from Chandigarh & 5 min drive from Ropar on Chandigarh – Jalandhar Highway (NH 344A), District: SBS Nagar, Punjab, India, PIN: 144533</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <div class="section">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills-container">
+                        <span class="skill">Python</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">DSA</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">Machine Learning</span>
+                        <span class="skill">SQL</span>
+                        <span class="skill">Git</span>
+                        <span class="skill">C++</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="project">
+                        <div class="project-title">AI-Powered Tutor App</div>
+                        <div class="project-desc">Developed an adaptive learning platform using NLP and React.js</div>
+                    </div>
+                    <div class="project">
+                        <div class="project-title">Campus Navigation System</div>
+                        <div class="project-desc">AR-based mobile app for Lamrin campus navigation</div>
+                    </div>
+                    <div class="project">
+                        <div class="project-title">Research Paper Analysis Tool</div>
+                        <div class="project-desc">Python script for automated academic paper summarization</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="info-item">
+                        <div class="info-label">Dean's List</div>
+                        <div>All semesters 2025
